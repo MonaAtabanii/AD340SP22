@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MM340Apps</string>
+    <string name="hello_label">Hello World</string>
+    <string name="name_date">Mohamed, Mona 4/17/2022</string>
+    <string name="fun_fact">I love cats, I used to have many of them. The fun fact about cats,
+                            after awhile with them you start yo understand them and speak their language ^_^
+    </string>
+    <string name="todo">TODO</string>
+</resources>
