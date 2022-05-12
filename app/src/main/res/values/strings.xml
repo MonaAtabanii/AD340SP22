@@ -6,4 +6,17 @@
                             after awhile with them you start yo understand them and speak their language ^_^
     </string>
     <string name="todo">TODO</string>
+    <string name="username">enter name</string>
+    <string name="infoBtn">INFO</string>
+
+    <string name="citiesBtn">CITIES</string>
+    <string name="moviesBtn">MOVIES</string>
+    <string name="parksBtn">PARKS</string>
+    <string name="trafficBtn">TRAFFIC</string>
+    <string name="musicBtn">MUSIC</string>
+    <string name="foodBtn">FOOD</string>
+
+    <string name="hw1Btn">Go to HW1</string>
+    <string name="goMain">Go to Main</string>
+    <string name="go_to_hw1">Go to HW1</string>
 </resources>
