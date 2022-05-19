@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         username = findViewById(R.id.username);
         info = findViewById(R.id.info);
@@ -55,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        //}
+
+
 
         GridView btnGridView = (GridView) findViewById(R.id.btn_gridview);
         //final BtnAdapter btnAdapter = new BtnAdapter(this, btnList);
