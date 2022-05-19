@@ -5,8 +5,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.GridView;
 import android.widget.Toast;
+import android.content.Intent;
+
 
 public class BtnAdapter extends BaseAdapter{
     private Context btnContext;
@@ -48,6 +49,13 @@ public class BtnAdapter extends BaseAdapter{
                 Toast t = Toast.makeText(btnContext, btnList[i], Toast.LENGTH_SHORT);
                 t.show();
         });
+
+        if (btnView.getText() == "MOVIES") {
+            btnView.setOnClickListener(v -> {
+                Intent intent = new Intent(btnView.getContext(), Movies.class);
+                btnView.getContext().startActivity(intent);
+            });
+        }
 
         return btnView;
     }

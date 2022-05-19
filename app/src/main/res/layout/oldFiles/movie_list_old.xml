@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/card_view"
+    app:cardBackgroundColor="#b2ebf2"
+    app:cardPreventCornerOverlap="true"
+   >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/m_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="top"
+                android:text="@string/zmovie_name"/>
+
+            <TextView
+                android:id="@+id/m_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/zmovie_year"/>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/m_pic"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

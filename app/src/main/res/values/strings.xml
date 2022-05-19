@@ -19,4 +19,14 @@
     <string name="hw1Btn">Go to HW1</string>
     <string name="goMain">Go to Main</string>
     <string name="go_to_hw1">Go to HW1</string>
+    <string name="goBack">Go Back</string>
+    <string name="movieslbl">Movies List</string>
+    <string name="detailslbl">Movie Details</string>
+    <string name="btn_adapter">Buttons Adapter</string>
+    <string name="zmovie_name">Movie Name</string>
+    <string name="zmovie_year">Relase Year</string>
+    <string name="zmovie_director">Movie Director</string>
+    <string name="zmovie_description">Movie Description</string>
+
+
 </resources>
