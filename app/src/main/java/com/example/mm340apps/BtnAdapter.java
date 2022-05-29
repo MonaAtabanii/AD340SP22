@@ -56,6 +56,12 @@ public class BtnAdapter extends BaseAdapter{
                 btnView.getContext().startActivity(intent);
             });
         }
+        else if (btnView.getText() == "TRAFFIC") {
+            btnView.setOnClickListener(v -> {
+                Intent intent = new Intent(btnView.getContext(), CamListActivity.class);
+                btnView.getContext().startActivity(intent);
+            });
+        }
 
         return btnView;
     }
