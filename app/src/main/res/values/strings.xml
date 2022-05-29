@@ -28,5 +28,11 @@
     <string name="zmovie_director">Movie Director</string>
     <string name="zmovie_description">Movie Description</string>
 
+    <string name="camId">\Camera ID: </string>
+    <string name="seattleTrafficCams_label">Seattle Traffic Cams</string>
+    <string name="seattleTrafficCams_imageDescription">Traffic Camera Image</string>
+    <string name="seattleTrafficCams_noNetworkMsg">Sorry, no network available.</string>
+
+    <string name="seattleTrafficCamMap_label">Traffic Cam Map</string>
 
 </resources>
