@@ -4,13 +4,17 @@ public class Camera {
     String camId;
     String camDescription;
     String camPicUrl;
-    double[] camCoordinates;
+    Double[] camCoordinates;
 
-    public Camera(String camId, String camDescription, String camPicUrl, double[] camCoordinates) {
+    public Camera(String camId, String camDescription, String camPicUrl, Double[] camCoordinates) {
         this.camId = camId;
         this.camDescription = camDescription;
         this.camPicUrl = camPicUrl;
         this.camCoordinates = camCoordinates;
+    }
+
+    public Camera() {
+
     }
 
     public String getCamId() {
@@ -25,7 +29,23 @@ public class Camera {
         return this.camDescription;
     }
 
-    public double[] getCamCoordinates() {
+    public Double[] getCamCoordinates() {
         return this.camCoordinates;
+    }
+
+    public void setCamId(String camId) {
+        this.camId = camId;
+    }
+
+    public void setCamDescription(String camDescription) {
+        this.camDescription = camDescription;
+    }
+
+    public void setCamPicUrl(String camPicUrl) {
+        this.camPicUrl = camPicUrl;
+    }
+
+    public void setCamCoordinates(Double[] camCoordinates) {
+        this.camCoordinates = camCoordinates;
     }
 }

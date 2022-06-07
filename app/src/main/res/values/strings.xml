@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">MM340Apps</string>
     <string name="hello_label">Hello World</string>
     <string name="name_date">Mohamed, Mona 4/17/2022</string>
@@ -9,30 +10,13 @@
     <string name="username">enter name</string>
     <string name="infoBtn">INFO</string>
 
-    <string name="citiesBtn">CITIES</string>
-    <string name="moviesBtn">MOVIES</string>
-    <string name="parksBtn">PARKS</string>
-    <string name="trafficBtn">TRAFFIC</string>
-    <string name="musicBtn">MUSIC</string>
-    <string name="foodBtn">FOOD</string>
-
-    <string name="hw1Btn">Go to HW1</string>
     <string name="goMain">Go to Main</string>
     <string name="go_to_hw1">Go to HW1</string>
-    <string name="goBack">Go Back</string>
-    <string name="movieslbl">Movies List</string>
-    <string name="detailslbl">Movie Details</string>
-    <string name="btn_adapter">Buttons Adapter</string>
-    <string name="zmovie_name">Movie Name</string>
-    <string name="zmovie_year">Relase Year</string>
-    <string name="zmovie_director">Movie Director</string>
-    <string name="zmovie_description">Movie Description</string>
 
     <string name="camId">\Camera ID: </string>
     <string name="seattleTrafficCams_label">Seattle Traffic Cams</string>
-    <string name="seattleTrafficCams_imageDescription">Traffic Camera Image</string>
     <string name="seattleTrafficCams_noNetworkMsg">Sorry, no network available.</string>
 
-    <string name="seattleTrafficCamMap_label">Traffic Cam Map</string>
-
+    <string name="user_location">Current Location</string>
+    <string name="provider_failed">Provider Failed</string>
 </resources>

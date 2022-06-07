@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     EditText username;
     Button info, cities, movies, parks, traffic, nusic, food, hw1;
     Toast t;
-    String[] btnList = {"CITIES", "MOVIES", "PARKS", "TRAFFIC", "MUSIC", "FOOD"};
+    String[] btnList = {"CITIES", "MOVIES", "PARKS", "TRAFFIC", "MUSIC", "LOCATION"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
