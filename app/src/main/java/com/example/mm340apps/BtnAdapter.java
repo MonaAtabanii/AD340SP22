@@ -9,6 +9,7 @@ import android.widget.Toast;
 import android.content.Intent;
 
 
+
 public class BtnAdapter extends BaseAdapter{
     private Context btnContext;
     String[] btnList;
@@ -59,6 +60,13 @@ public class BtnAdapter extends BaseAdapter{
         else if (btnView.getText() == "TRAFFIC") {
             btnView.setOnClickListener(v -> {
                 Intent intent = new Intent(btnView.getContext(), CamListActivity.class);
+                btnView.getContext().startActivity(intent);
+            });
+        }
+
+        else if (btnView.getText() == "LOCATION") {
+            btnView.setOnClickListener(v -> {
+                Intent intent = new Intent(btnView.getContext(), MapsActivity.class);
                 btnView.getContext().startActivity(intent);
             });
         }

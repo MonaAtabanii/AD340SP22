@@ -1,7 +1,5 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="margin_start">28dp</dimen>
     <dimen name="margin_end">15dp</dimen>
     <dimen name="h_spacing">30dp</dimen>

@@ -45,7 +45,7 @@ public class CamListActivity extends AppCompatActivity {
         }
     }
 
-    private void getCamInfo(String camInfo) {
+    public  void getCamInfo(String camInfo) {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, camInfo, null, response -> {
             Log.v("Cameras", response.toString());
@@ -58,7 +58,7 @@ public class CamListActivity extends AppCompatActivity {
                     JSONObject data = camArray.getJSONObject(idx);
                     Log.v("Cams Data", data.toString());//camData
                     JSONArray coordination = data.getJSONArray("PointCoordinate");
-                    double[] camCoordinates = {coordination.getDouble(0), coordination.getDouble(1)};
+                    Double[] camCoordinates = {coordination.getDouble(0), coordination.getDouble(1)};
                     JSONArray item = data.getJSONArray("Cameras");
                     Camera cam = new Camera(item.getJSONObject(0).getString("Id"),
                             item.getJSONObject(0).getString("Description"),
