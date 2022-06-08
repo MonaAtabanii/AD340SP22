@@ -67,6 +67,12 @@
             android:name=".MapsActivity"
             android:label="Traffic Cam Map"
             android:parentActivityName=".MainActivity"/>
+
+        <activity
+            android:name=".FireBaseActivity"
+            android:label="Connection with/to FireBase"
+            android:parentActivityName=".MainActivity"/>
+
     </application>
 
 </manifest>

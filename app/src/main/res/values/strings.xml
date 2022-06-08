@@ -8,7 +8,10 @@
     </string>
     <string name="todo">TODO</string>
     <string name="username">enter name</string>
-    <string name="infoBtn">INFO</string>
+    <string name="infoBtn">LOGIN</string>
+    <string name="email">enter email</string>
+    <string name="password">enter password</string>
+
 
     <string name="goMain">Go to Main</string>
     <string name="go_to_hw1">Go to HW1</string>
@@ -16,6 +19,7 @@
     <string name="camId">\Camera ID: </string>
     <string name="seattleTrafficCams_label">Seattle Traffic Cams</string>
     <string name="seattleTrafficCams_noNetworkMsg">Sorry, no network available.</string>
+    <string name="noInternet">Please Connect to the Internet</string>
 
     <string name="user_location">Current Location</string>
     <string name="provider_failed">Provider Failed</string>

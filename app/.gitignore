@@ -3,3 +3,12 @@ google-services.json
 /src/main/java/com.example.mm340apps/oldFiles/
 /src/main/res/layout/oldFiles/
 /API_KEY
+/src/main/res/values/google_maps_api.xml
+/src/release/
+.gitignore
+src\main\res\values\google_maps_api.xml
+/src/main/res/values/google_maps_api.xml
+/src/release/
+/app/src/release/res/
+src\main\res\values\google_maps_api.xml
+.src\main\res\values\google_maps_api.xml

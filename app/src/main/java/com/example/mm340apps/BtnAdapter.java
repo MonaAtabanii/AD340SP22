@@ -71,6 +71,13 @@ public class BtnAdapter extends BaseAdapter{
             });
         }
 
+       /* else if (btnView.getText() == "FIREBASE") {
+            btnView.setOnClickListener(v -> {
+                Intent intent = new Intent(btnView.getContext(), FireBaseActivity.class);
+                btnView.getContext().startActivity(intent);
+            });
+        }*/
+
         return btnView;
     }
 }
