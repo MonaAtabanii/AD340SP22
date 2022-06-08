@@ -7,55 +7,81 @@
     tools:context=".MainActivity"
     tools:layout_editor_absoluteY="56dp">
 
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="215dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/username"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/username"
-        android:layout_width="0dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="@dimen/margin_start"
-        android:layout_marginTop="16dp"
-        android:ems="8"
+        android:layout_width="161dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
         android:hint="@string/username"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="215dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:ems="8"
+        android:hint="@string/password"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141" />
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintVertical_bias="0.001" />
 
     <Button
-        android:id="@+id/info"
-        android:layout_width="0dp"
-        android:layout_height="58dp"
+        android:id="@+id/Login"
+        android:layout_width="116dp"
+        android:layout_height="47dp"
         android:layout_marginStart="@dimen/h_spacing"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="@dimen/margin_end"
+        android:layout_marginBottom="536dp"
         android:text="@string/infoBtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/username"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141"
-        tools:ignore="UnknownId" />
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toEndOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.46" />
 
     <GridView
         android:id="@+id/btn_gridview"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/margin_end"
         android:layout_marginStart="@dimen/margin_start"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="@dimen/margin_end"
         android:columnWidth="90dp"
         android:gravity="center"
         android:horizontalSpacing="22dp"
         android:numColumns="2"
-        app:layout_constraintHorizontal_bias="0.644"
         android:stretchMode="columnWidth"
         android:verticalSpacing="@dimen/fab_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username">
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.044">
 
     </GridView>
 
@@ -67,10 +93,10 @@
         android:text="@string/go_to_hw1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintHorizontal_bias="0.952"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_gridview"
-        app:layout_constraintVertical_bias="0.06"
+        app:layout_constraintVertical_bias="0.317"
         tools:ignore="UnknownId" />
 
 

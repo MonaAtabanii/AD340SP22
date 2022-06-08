@@ -39,6 +39,7 @@ public class CamListActivity extends AppCompatActivity {
             Log.v("myTag", "Connected");
             getCamInfo(camInfo);
         } else {
+            setContentView(R.layout.no_internet);
             Log.v("myTag", "No Connection");
             Toast.makeText(getApplicationContext(), "Faild, No connection you need to connet to the internet", Toast.LENGTH_SHORT).show();
 
