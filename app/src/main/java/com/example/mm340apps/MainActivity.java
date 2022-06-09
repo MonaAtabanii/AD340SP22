@@ -87,9 +87,9 @@ public class MainActivity extends AppCompatActivity {
         btnGridView.setAdapter(new BtnAdapter(this, btnList));
     }
 
-    private boolean isEmpty(EditText text) {
-        CharSequence str = text.getText().toString();
-        return TextUtils.isEmpty(str);
+    private boolean isEmpty(String text) {
+        //CharSequence str = text;
+        return TextUtils.isEmpty(text);
     }
 
     static boolean validEmail(String text) {
@@ -97,21 +97,21 @@ public class MainActivity extends AppCompatActivity {
         return (!TextUtils.isEmpty(email) && Patterns.EMAIL_ADDRESS.matcher(email).matches());
     }
 
-    boolean dataValidation() {
+    boolean dataValidation(String name, String email, String password) {
         boolean check = true;
-        if (validEmail(useremail.getText().toString()) == false) {
+        if (validEmail(email) == false) {
             check = false;
             Toast t = Toast.makeText(this, "Enter user email", Toast.LENGTH_SHORT);
             useremail.setError("Enter valid email!");
             t.show();
         }
-        else if (isEmpty(username)) {
+        else if (isEmpty(name)) {
             check = false;
             Toast t = Toast.makeText(this, "Enter user name", Toast.LENGTH_SHORT);
             username.setError("User name is required");
             t.show();
         }
-        else if (isEmpty(userpassword)){
+        else if (isEmpty(password)){
             check = false;
             Toast t = Toast.makeText(this, "Enter Password", Toast.LENGTH_SHORT);
             userpassword.setError("Password is required");
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
         String displayname = username.getText().toString();
         String email = useremail.getText().toString();
         String password = userpassword.getText().toString();
-        if (!dataValidation()){
+        if (!dataValidation(displayname, email, password)){
             return;
         }
 
